@@ -1,55 +1,84 @@
-*{
-    box-sizing: border-box;
-    margin: 5px;
-    padding: 0px;
-    margin-bottom: 10px;
-}
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
 
-body > header{ /* coloca a edição do header que está na posição diretamente posterior ao body  */
-    background-color: rgba(187, 0, 0, 0.856);
-    color: white;
-    text-align: center;
-}
-header a {
-    color: white;
-    text-decoration: none;
-}
+    body > header{ /* coloca a edição do header que está na posição diretamente posterior ao body  */
+        background-color: rgba(187, 0, 0, 0.856);
+        color: white;
+        text-align: center;
+        width: 1366px;
+    }
+    header nav{
+        text-align: right;
+    }
+    header nav a{
+        color: white;
+        text-decoration: none;
+        padding-right: 10px;
+    }
 
-.articles{
-    display: flex;
-    flex-wrap: wrap;
-}
+    .articles{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-.articles article img {
-    width: 100%;
-}
-.articles article{
-    width: 30%;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    .articles article img {
+        width: 100%;
+    }
+    .articles article a {
+        margin : 1000px 0 0 ;
+    }
+    .articles article{
+        width: 30%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-.articles article a {
-    background-color: blue;
-    color: white;
-    padding: 8px;
-    text-decoration: none;
+    .articles article a:hover{
+        background-color: rgb(8, 57, 148);
+    }
+
+
+    #economia,
+    #ultimas_noticias{
+        width: 1366px;
+        margin: 0 auto;
+        padding:24px;
+    }
+
+    #ultimas_noticias{
+        background-color: rgba(96, 163, 250, 0.3);
+
+    }
+
+    #economia{
+        background-color: rgba(228, 255, 78, 0.527);
+    }
+
+    .articles article a {
+        display: flex;
+        max-width:80px;
+        background-color: rgba(38, 73, 139, 0.712);
+        color: white;
+        padding: 8px;
+        margin: 10px 0 0;
+        text-decoration: none;
+    }
     
-}
+    .articles2 article a {
+        display: flex;
+        max-width:80px;
+        background-color: rgba(201, 240, 60, 0.877);
+        color: rgb(0, 0, 0);
+        font-size: large;
+        margin: 10px 0 0;
+        padding: 8px;
+        text-decoration: none;
+    }
+    
 
-
-#economia,
-#ultimas_noticias{
-    width: 1366px;
-    margin: 0 auto;
-}
-
-#ultimas_noticias{
-    background-color: rgba(96, 163, 250, 0.3);
-
-}
-
-#economia{
-    background-color: rgba(228, 255, 78, 0.527);
-}
-
-body header a : hover
+    .articles2 article a:hover{
+        background-color: rgb(151, 177, 6);
+    }
